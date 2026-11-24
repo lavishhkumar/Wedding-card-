@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211c1a">
+  <meta name="description" content="Aarav Sharma and Meera Sharma invite you to celebrate their wedding in Jaipur.">
+  <title>Aarav &amp; Meera Sharma — The Wedding Celebration</title>
+
+  <!-- Fonts ko Google Fonts se load kiya hai; internet na ho to elegant system fallbacks use honge. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- CSS styling alag file mein rakha hai. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="card-locked">
+  <!-- Shaadi card ka cover page load hote hi dikhega; button dabane par main invite khulega. -->
+  <section class="card-gate" id="card-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="gate-panel">
+      <span class="gate-ornament" aria-hidden="true">❦</span>
+      <p class="eyebrow">A celebration of love</p>
+      <p class="gate-label">Wedding invitation</p>
+      <h1 class="gate-title" id="gate-title">Aarav <span>&amp;</span> Meera Sharma</h1>
+      <p class="gate-date">10 December 2026 · Jaipur</p>
+      <p class="gate-note">With the blessings of both Sharma families</p>
+      <button class="button gate-open" id="open-card" type="button">Click here to open card <span aria-hidden="true">↗</span></button>
+      <p class="gate-sender">You are warmly invited</p>
+    </div>
+  </section>
+
+  <!-- Header navigation: mobile par button se full-screen menu khulta hai. -->
+  <header class="site-header" id="top">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Aarav and Meera, home">A <span>&amp;</span> M</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="#story">Our Story</a>
+        <a href="#events">Celebrations</a>
+        <a href="#venue">Venue</a>
+        <a href="#gallery">Gallery</a>
+        <a class="nav-rsvp" href="#rsvp">Send wishes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero invite: background video fail ho to neeche diya photo fallback rahega. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero-video" muted loop playsinline preload="none" poster="https://images.pexels.com/videos/17539532/pexels-photo-17539532.jpeg?cs=tinysrgb&amp;dpr=1&amp;w=1400" aria-hidden="true">
+        <source data-src="https://videos.pexels.com/video-files/17539532/17539532-sd_640_360_25fps.mp4" media="(max-width: 700px)" type="video/mp4">
+        <source data-src="https://videos.pexels.com/video-files/17539532/17539532-hd_1280_720_25fps.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <p class="hero-kicker">Together with our families</p>
+        <h1 id="hero-title">Aarav Sharma <span>&amp;</span> Meera Sharma</h1>
+        <p class="hero-date">10 December 2026 · Jaipur</p>
+        <p class="hero-copy">Joyfully invite you to celebrate the beginning of forever</p>
+        <a class="button button-light" href="#welcome">Explore the invitation <span aria-hidden="true">↓</span></a>
+      </div>
+      <a class="hero-scroll" href="#welcome">Scroll to explore</a>
+    </section>
+
+    <!-- Welcome note: Indian family relations aur formal shaadi ka nimantran yahan hai. -->
+    <section class="welcome reveal" id="welcome">
+      <div class="wrap">
+        <p class="welcome-mark" aria-hidden="true">॥ श्री गणेशाय नमः ॥</p>
+        <p class="eyebrow">Shubh vivah · With love &amp; blessings</p>
+        <h2 class="section-title">The Sharma families<br><em>cordially invite you</em></h2>
+        <p class="section-intro">With the blessings of our elders, we request the pleasure of your company as our families come together to celebrate a beautiful union.</p>
+        <div class="family-details">
+          <div class="family-person">
+            <p class="family-role">The bride</p>
+            <h3>Meera Sharma</h3>
+            <p>Granddaughter of Late Shri Mohan Lal &amp; Smt. Kamla Devi</p>
+            <p>Daughter of Shri Rajesh Sharma &amp; Smt. Sunita Sharma</p>
+          </div>
+          <span class="family-union" aria-hidden="true">&amp;</span>
+          <div class="family-person">
+            <p class="family-role">The groom</p>
+            <h3>Aarav Sharma</h3>
+            <p>Grandson of Shri Raghunath Sharma &amp; Smt. Sharda Sharma</p>
+            <p>Son of Shri Sanjay Sharma &amp; Smt. Kavita Sharma</p>
+          </div>
+        </div>
+        <p class="family-request">Meera &amp; Aarav look forward to beginning their new journey together with your blessings.</p>
+        <span class="date-stamp">Thursday · 10 December 2026</span>
+      </div>
+    </section>
+
+    <!-- Couple story: yahan dono ke milne aur saath ki kahani personalize karein. -->
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="story-photo reveal">
+          <img src="https://images.pexels.com/photos/37380257/pexels-photo-37380257.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;q=85" alt="The couple sharing a tender moment in casual pre-wedding outfits outdoors" loading="lazy">
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow">A little about us</p>
+          <h2 class="section-title">Our story,<br><em>our forever.</em></h2>
+          <p>Somewhere between a shared smile and a thousand little moments, we found our favourite person. What began as a beautiful friendship became a love we can't wait to celebrate with all of you.</p>
+          <p>Now, surrounded by the people who mean the most to us, we're ready to begin our next chapter. We would be honoured to have you by our side.</p>
+          <div class="signature">Aarav &amp; Meera Sharma</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown timer: JavaScript event date ke hisaab se numbers update karta hai. -->
+    <section class="countdown-section">
+      <div class="wrap reveal">
+        <p class="eyebrow">The countdown is on</p>
+        <h2 class="section-title">Until we say <em>“I do”</em></h2>
+        <div class="countdown" aria-label="Countdown to the wedding">
+          <div class="count-unit"><span class="count-number" id="days">000</span><span class="count-label">Days</span></div>
+          <div class="count-unit"><span class="count-number" id="hours">00</span><span class="count-label">Hours</span></div>
+          <div class="count-unit"><span class="count-number" id="minutes">00</span><span class="count-label">Minutes</span></div>
+          <div class="count-unit"><span class="count-number" id="seconds">00</span><span class="count-label">Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event schedule: har function ka time, dress hint aur jagah yahan di gayi hai. -->
+    <section class="events" id="events">
+      <div class="wrap">
+        <div class="center reveal">
+          <p class="eyebrow">Save the dates</p>
+          <h2 class="section-title">The <em>celebrations</em></h2>
+          <p class="section-intro">A day of traditions, joyful moments, and memories we'll keep close forever.</p>
+        </div>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-icon" aria-hidden="true">✳</div>
+            <p class="event-time">10 December · 9:00 AM</p>
+            <h3>Haldi</h3>
+            <p>A morning of sunshine, blessings, music and a little bit of turmeric.</p>
+            <p class="event-place">The Courtyard · Jaipur</p>
+            <p>Dress code: Shades of yellow</p>
+          </article>
+          <article class="event-card reveal">
+            <div class="event-icon" aria-hidden="true">✧</div>
+            <p class="event-time">10 December · 6:00 PM</p>
+            <h3>The Wedding</h3>
+            <p>Join us for the ceremony as we begin our forever, surrounded by love.</p>
+            <p class="event-place">Gulab Bagh · Jaipur</p>
+            <p>Dress code: Festive Indian</p>
+          </article>
+          <article class="event-card reveal">
+            <div class="event-icon" aria-hidden="true">♡</div>
+            <p class="event-time">10 December · 8:00 PM</p>
+            <h3>Reception</h3>
+            <p>Good food, happy hearts and a dance floor waiting just for you.</p>
+            <p class="event-place">Gulab Bagh · Jaipur</p>
+            <p>Dress code: Formal / Festive</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue details: pre-wedding couple photo ke saath postal address yahan diya gaya hai. -->
+    <section class="venue" id="venue">
+      <div class="venue-image" role="img" aria-label="The couple enjoying an outdoor pre-wedding photoshoot in casual outfits"></div>
+      <div class="venue-details">
+        <div class="reveal">
+          <p class="eyebrow">Where to join us</p>
+          <h2 class="section-title">Meet us in<br><em>Jaipur.</em></h2>
+          <p class="venue-address">Gulab Bagh Palace<br>Amer Road, Jaipur, Rajasthan 302002</p>
+          <p>Parking is available at the venue. Please arrive 20 minutes before the ceremony so we can begin together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo gallery: same couple ke casual pre-wedding shoot ke moments yahan dikhaye hain. -->
+    <section class="gallery" id="gallery">
+      <div class="wrap">
+        <div class="center reveal">
+          <p class="eyebrow">Little moments, big memories</p>
+          <h2 class="section-title">A glimpse of <em>us</em></h2>
+          <p class="section-intro">A few candid moments from our pre-wedding shoot, captured just as we are.</p>
+        </div>
+        <div class="gallery-grid reveal">
+          <div class="gallery-item"><img src="https://images.pexels.com/photos/37380250/pexels-photo-37380250.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;q=85" alt="The couple laughing together in a white summer dress and a black casual shirt" loading="lazy"></div>
+          <div class="gallery-item"><img src="https://images.pexels.com/photos/37380247/pexels-photo-37380247.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;q=85" alt="The couple walking together in relaxed pre-wedding outfits" loading="lazy"></div>
+          <div class="gallery-item"><img src="https://images.pexels.com/photos/37380257/pexels-photo-37380257.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;q=85" alt="The couple sharing a close, candid moment during their pre-wedding shoot" loading="lazy"></div>
+          <div class="gallery-item"><img src="https://images.pexels.com/photos/37380249/pexels-photo-37380249.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200&amp;q=85" alt="The couple enjoying a playful outdoor moment in casual outfits" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blessings form: yeh sample form details ko store ya server par send nahi karta. -->
+    <section class="rsvp" id="rsvp">
+      <div class="wrap">
+        <div class="center reveal">
+          <p class="eyebrow">A celebration made brighter by you</p>
+          <h2 class="section-title">Send us <em>your blessings</em></h2>
+          <p class="section-intro">Share your name and a note for the couple. Your love and good wishes mean the world to us.</p>
+        </div>
+        <div class="rsvp-card reveal">
+          <form class="rsvp-form" id="rsvp-form">
+            <div class="field">
+              <label for="guest-first-name">First name *</label>
+              <input id="guest-first-name" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+            </div>
+            <div class="field">
+              <label for="guest-last-name">Last name *</label>
+              <input id="guest-last-name" name="lastName" type="text" autocomplete="family-name" placeholder="Last name" required>
+            </div>
+            <div class="field">
+              <label for="guest-mobile">Mobile number *</label>
+              <input id="guest-mobile" name="mobile" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+            <div class="field field-wide">
+              <label for="guest-message">Your blessings (optional)</label>
+              <textarea id="guest-message" name="message" placeholder="Write a heartfelt message for the couple..."></textarea>
+            </div>
+            <button class="button" type="submit">Send your wishes <span aria-hidden="true">♡</span></button>
+          </form>
+          <p class="form-note">This is a demo form. Your details are not stored or sent anywhere.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: invitation ko personal sign-off ke saath close kiya gaya hai. -->
+  <footer class="footer">
+    <div class="footer-monogram">A <span>&amp;</span> M</div>
+    <p>We can't wait to celebrate with you.</p>
+    <div class="footer-senders">
+      <span class="sender-label">Your hosts · with love and blessings</span>
+      <!-- Dono senders ka phone aur same address example hain; share karne se pehle replace karein. -->
+      <div class="sender-grid">
+        <section class="sender-card" aria-label="Bride's family sender details">
+          <p class="sender-role">Bride's family</p>
+          <h3>Shri Rajesh Sharma</h3>
+          <p class="sender-phone">Mobile: +91 98XXX 12345</p>
+          <address>House No. 12, Shanti Nagar,<br>Jaipur, Rajasthan 302001</address>
+        </section>
+        <section class="sender-card" aria-label="Groom's family sender details">
+          <p class="sender-role">Groom's family</p>
+          <h3>Shri Sanjay Sharma</h3>
+          <p class="sender-phone">Mobile: +91 97XXX 54321</p>
+          <address>House No. 12, Shanti Nagar,<br>Jaipur, Rajasthan 302001</address>
+        </section>
+      </div>
+      <span class="sender-location">Mobile numbers and address are sample details</span>
+    </div>
+    <small>Aarav &amp; Meera Sharma · 10.12.2026</small>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- JavaScript interactions alag file se load hote hain. -->
+  <script src="script.js" defer></script>
+</body>
+</html>
